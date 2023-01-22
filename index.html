@@ -1,0 +1,85 @@
+<!-- DOCTYPE = Definindo o documento como HTML -->
+<!DOCTYPE html>
+<!-- html = Criou uma TAG HTML | lang = Qual idioma -->
+<html lang="pt-br">
+  <head>
+    <!-- Link = Link com algum arquivo  (Fechamento nele mesmo />) -->
+    <!-- Link com as Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Roboto+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Link com os Icons -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+
+    <!-- TAGs padrões do DOCTYPE
+      meta          = HTML se Configurando (Fechamento nele mesmo />)
+      charset       = Conjunto de caracteres aceitado
+      http-equiv    = Compatibilidade com navegador utilizado (content)
+      -content      = Internet Explorer selecionado
+      viewport      = Parte visível da página
+      -content      = Conteúdo da viewport
+      initial-scale = Escada inicial da página
+      title         = Título da página -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fontechn - Habits</title>
+
+    <!-- Link com o CSS
+      link  = TAG de link
+      rel   = Tipo de relacionamento do arquivo, no caso estilo da página (stylesheet)
+      href  = Caminho do CSS -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <!-- Header = Cabeçalho da página -->
+    <header>
+      <!-- Logo Habits
+        img = TAG de imagem (Fechamento nele mesmo />)
+        src = Caminho da imagem
+        alt = Texto alternativo no caso de falha do src -->
+      <img src="./assets/logo.svg" alt="Logomarca do App Habits By: Fontechn" />
+
+      <!-- Botão Registrar o meu dia (Imagem + Texto)-->
+      <button>
+        <img src="./assets/plus.svg" alt="Plus" />
+        <div>Registrar o meu dia</div>
+      </button>
+    </header>
+
+    <!-- form   = Formulário
+      div       = Caixa genérica
+      class     = Classificação
+      Input     = Controles interativos (Fechamento nele mesmo />)
+      type      = Tipo de input
+      checkbox  = Marcar/Desmarcar
+      checked   = Marcado -->
+    <form id="form-habits">
+      <!-- Caixa Habits -->
+      <div class="habits">
+        <div class="habit" data-name="Acordar">☀️</div>
+        <div class="habit" data-name="Escola">🎒</div>
+        <div class="habit" data-name="Plenus1">🦅</div>
+        <div class="habit" data-name="Almocar">🍽️</div>
+        <div class="habit" data-name="Plenus2">🦅</div>
+        <div class="habit" data-name="Estudar">👨🏻‍💻</div>
+        <div class="habit" data-name="Casa">🚐</div>
+        <div class="habit" data-name="Jantar">🍽️</div>
+        <div class="habit" data-name="Dormir">💤</div>
+      </div>
+      <!-- Caixa Dias -->
+      <div class="days"></div>
+    </form>
+
+    <script src="https://cdn.jsdelivr.net/gh/maykbrito/libs/NLWSetup/source/NLWSetup.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

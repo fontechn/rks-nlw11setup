@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px solid red; */
+}
+
+/* Seletor Body */
+body {
+  background-color: #09090a;
+  color: white;
+
+  height: 100vh;
+}
+
+/* Seletor Header */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 48px;
+
+  position: fixed;
+  width: 100%;
+  background-color: #09090a;
+}
+
+/* Seletor Button */
+button {
+  /* Propriedades de dimensão e cores */
+  padding: 16px 24px;
+  border-radius: 8px;
+  border: 1px solid #8b5cf6;
+  background-color: transparent;
+  color: white;
+
+  /* Propriedades de disposição
+    display     = Disposição dos elementos
+    flex        = Dá flexibilidade e "Quebra a linha"
+    align-items = Alinhar ao centro (Somente com flex)
+    gap         = Espaço entre os elementos (Do tipo flex) */
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  /* Propriedades da fonte */
+  font-family: "inter";
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 125%;
+}
+
+/* Seletor do ID Form */
+#form-habits {
+  display: flex;
+  padding: 182px 48px 48px;
+  width: fit-content;
+}
+
+/* Seletor da classe .habits (Conjunto dos Ícones) */
+.habits {
+  margin-top: 55px;
+  display: flex;
+  flex-direction: column;
+
+  gap: 24px;
+}
+
+/* Seletor da classe .habit (Ícones) */
+.habit {
+  width: 64px;
+  height: 64px;
+
+  font-size: 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Seletor day (Todos os dias) */
+.days {
+  display: flex;
+  gap: 48px;
+  margin-left: 32px;
+}
+
+/* Seletor day (Checkboxs) */
+.day {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* Seletor div do day (Dias) */
+.day div {
+  margin-bottom: 8px;
+
+  font-family: "Roboto Mono";
+  font-size: 20px;
+  line-height: 125%;
+
+  color: #a1a1aa;
+
+  text-align: center;
+}
+
+/* Seletor Input */
+input {
+  /* Retirar a aparência
+     -webkit- = Propriedades específicas para alguns Navegadores */
+  appearance: none;
+  -webkit-appearance: none;
+
+  width: 64px;
+  height: 64px;
+
+  border: 2px solid #27272a;
+  border-radius: 8px;
+
+  background: #18181b;
+}
+
+/* Seletor Input checked (Pseudo-selector) */
+input:checked {
+  background: #8b5cf6;
+  border: 2px solid #a78bfa;
+}
+
+@media (max-width: 570px) {
+  button div {
+    display: none;
+  }
+}
